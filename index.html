@@ -295,7 +295,7 @@
     <a href="#hero" class="brand"><img src="assets/logo-header.png" alt="Ales and Trails logo"><span class="brand-word">ALES &amp; TRAILS</span></a>
     <nav class="main-nav" id="main-nav">
       <a href="#events">The Rides</a>
-      <a href="#crew">The Crew</a>
+      <!-- <a href="#crew">The Crew</a> -->
       <a href="#about">About</a>
     </nav>
     <button id="menu-btn" aria-label="Menu">&#9776;</button>
@@ -325,7 +325,7 @@
   </div>
 </section>
 
-<section id="events">
+<!-- <section id="events">
   <div class="wrap">
     <div class="section-head">
       <h2>Every Ride So Far</h2>
@@ -333,7 +333,7 @@
     </div>
     <div class="event-grid" id="event-grid"></div>
   </div>
-</section>
+</section> -->
 
 <section id="crew">
   <div class="wrap">
@@ -627,7 +627,7 @@ fetch('events_data.json')
     EVENTS = data;
     renderStats();
     renderGrid();
-    renderCrew();
+    // renderCrew(); // TODO
     renderAboutPhotos();
   })
   .catch(err => {
