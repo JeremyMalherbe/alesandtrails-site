@@ -335,7 +335,7 @@
   </div>
 </section> -->
 
-<section id="crew">
+<section id="crew" style="display:none;">
   <div class="wrap">
     <div class="section-head">
       <h2>The Crew</h2>
@@ -627,7 +627,7 @@ fetch('events_data.json')
     EVENTS = data;
     renderStats();
     renderGrid();
-    // renderCrew(); // TODO
+    renderCrew();
     renderAboutPhotos();
   })
   .catch(err => {
